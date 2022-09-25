@@ -103,7 +103,7 @@ public class AlunoDAO implements Map<String, Aluno> {
                 String sql = "INSERT INTO alunos VALUES ('" + value.getNumero() + "', '" + value.getNome() + "', '" + value.getEmail() + "', NULL" + ")";
                 stm.executeUpdate(sql);
             }
-        } catch (SQLException e) {
+            } catch (SQLException e) {
             // Database error!
             e.printStackTrace();
             throw new NullPointerException(e.getMessage());
